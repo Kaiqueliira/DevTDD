@@ -25,4 +25,14 @@ public class LeapYearTests
         result.Should().BeFalse();
     }
 
+    [Fact]
+    public void IsLeapYear_ShouldReturnTrue_WhenDivisibleBy400()
+    {
+        int year = 2000;
+
+        var result = LeapYearServices.IsLeapYear(year);
+
+        result.Should().BeTrue();
+    }
+
 }
