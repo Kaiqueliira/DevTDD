@@ -5,6 +5,8 @@ public class LeapYearServices
 {
     public static bool IsLeapYear(int year)
     {
-        throw new NotImplementedException();
+        if (year % 4 == 0) return true;
+
+        return false;
     }
 }
