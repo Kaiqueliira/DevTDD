@@ -35,4 +35,13 @@ public class LeapYearTests
         result.Should().BeTrue();
     }
 
+    [Fact]
+    public void IsLeapYear_ShouldReturnFalse_WhenNotDivisibleBy4()
+    {
+        int year = 2017;
+
+        var result = LeapYearServices.IsLeapYear(year);
+
+        result.Should().BeFalse();
+    }
 }
