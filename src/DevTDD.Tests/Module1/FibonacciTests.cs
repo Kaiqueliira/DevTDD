@@ -24,6 +24,16 @@ namespace DevTDD.Tests.Module1
 
             result.Should().Be(1);
         }
+
+        [Fact]
+        public void GetFibonacci_PositionTwo_ShouldReturnOne()
+        {
+            int position = 2;
+
+            int result = FibonacciServices.GetFibonacci(position);
+
+            result.Should().Be(1);
+        }
     }
 }
 
